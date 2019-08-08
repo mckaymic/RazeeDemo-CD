@@ -6,6 +6,6 @@ metadata:
 spec:
   requests:
   - options:
-      url: https://s3.us.cloud-object-storage.appdomain.cloud/razeedemo01/bom/dev.yaml
+      url: https://raw.githubusercontent.com/mckaymic/RazeeDemo-CD/master/razee-demo-versions.yaml
 status:
   last-modified: []
