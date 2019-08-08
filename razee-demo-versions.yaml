@@ -1,7 +1,7 @@
 apiVersion: v1
 data:
-  dev: ef28596f346f049788b42cbb4d666ca375f24e74
-  prod: ef28596f346f049788b42cbb4d666ca375f24e74
+  dev: 2611fe384636d492799ce2d4d0d3dca6d74477de
+  prod: 2611fe384636d492799ce2d4d0d3dca6d74477de
 kind: ConfigMap
 metadata:
   labels:
