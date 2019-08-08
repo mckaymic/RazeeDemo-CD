@@ -1,0 +1,11 @@
+apiVersion: kapitan.razee.io/v1alpha1
+kind: RemoteResource
+metadata:
+  name: razee-demo-versions-remote
+  namespace: default
+spec:
+  requests:
+  - options:
+      url: https://s3.us.cloud-object-storage.appdomain.cloud/razeedemo01/bom/dev.yaml
+status:
+  last-modified: []

@@ -1,0 +1,22 @@
+- apiVersion: "kapitan.razee.io/v1alpha1"
+  kind: MustacheTemplate
+  metadata:
+    name: base-bom-template
+    namespace: default
+  spec:
+    env:
+    - name: type
+      valueFrom:
+        configMapKeyRef:
+          name: clusterinfo
+          key: type
+    templates:
+    - apiVersion: "kapitan.razee.io/v1alpha1"
+      kind: RemoteResource
+      metadata:
+        name: base-remote-bom
+        namespace: default
+      spec:
+        requests:
+        - options:
+            url: https://s3.us.cloud-object-storage.appdomain.cloud/razeedemo01/bom/{{type}}.yaml

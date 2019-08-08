@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  dev: 36aaa01317eaf85cab5a26710814307a28cadcfb
+  prod: 85828e97426f81946f75b4bf51d7dd35f1e289f3
+kind: ConfigMap
+metadata:
+  labels:
+    razee/cluster-metadata: "true"
+  name: razee-demo-versions
+  namespace: default
